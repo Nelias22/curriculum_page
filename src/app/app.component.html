@@ -14,15 +14,20 @@
   <header class= "container">
     <div class="jumbotron">
       <div class="row">
-        <div class="col-xs-12 col-md-10">
+        <div class="col-xs-12 col-md-8">
           <h1>Nayib Elías
-          <small id="sysEng">Systems Engineer</small>
+          <small id="sysEng">{{"syseng" | translate}}</small>
           </h1>
         </div> 
-        <div class="col-xs-12 col-md-2">
-          <a href="https://www.dropbox.com/s/1wg8h1b1zxoubgw/Nayib%20CV%20English.docx?dl=0" class="btn btn-info" role="button">
-              Check out my CV
+        <div class="col-xs-12 col-sm-12 col-md-2" >
+          <a href='{{"linkcv" | translate}}' class="btn btn-info btn-lg" role="button">
+              {{"checkcv" | translate}}
           </a>
+        </div>
+       
+        <div class="col-xs-12 col-sm-12 col-md-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm"(click)="changeLang('es')">ES</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm"(click)="changeLang('en')">EN</button>
         </div>
       </div>
     </div>
@@ -40,8 +45,9 @@
         </div>
       
       <div class="col-md-6 text-justify">
-        <h6>Hey there, my name is Nayib Elías.</h6>
-      I am a Systems Engineer, graduated from Universidad del Norte in Barranquilla, Colombia. I'm a software developer with a history of developing mobile apps and webpages (like this one!). My preferred environments include Java, C#, Angular and Ionic Framework.</div>
+        <h6>{{"greeting" | translate}}</h6>
+            {{"bio" | translate}}</div>
+            
     </div>
   </div>
 
